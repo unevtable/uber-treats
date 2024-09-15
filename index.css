@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: auto;
     font-family: "Space Grotesk", sans-serif;
     font-size: 12px;
     background-color: #EEEEEE;
@@ -51,6 +51,7 @@ header {
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 12px;
 }
 
 .item-img {
@@ -86,9 +87,8 @@ header {
     font-size: 16px;
     font-weight: bold;
     border-radius: 50%;
-    height: 36px;
-    width: 36px;
-    margin: auto 8px;
+    padding: 11px 15px;
+    margin: auto 12px;
     transition: all ease 0.15s;
 }
 
