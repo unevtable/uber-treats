@@ -1,3 +1,98 @@
 body {
     margin: 0;
-} 
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    background-color: #EEEEEE;
+    color: #162328;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    width: 375px;
+    flex-direction: column;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    text-align: left;
+    height: 70px;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: 26px;
+    margin: 15px 12px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hero-treats {
+    color: #3FC060;
+}
+
+.hero-image {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-item-container {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-img {
+    width: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.item-info {
+    margin: auto;
+    margin-top: 3px;
+    margin-left: 13px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-ingredients {
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+.add-button {
+    border: 1px grey solid;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    margin: auto 8px;
+    transition: all ease 0.15s;
+}
+
+.add-button:active {
+    background-color: #3FC060;
+    color: white;
+    border-color: white;
+}
