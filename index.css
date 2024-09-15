@@ -4,12 +4,13 @@ body {
     font-size: 12px;
     background-color: #EEEEEE;
     color: #162328;
+    max-width: 375px;
 }
 
 .container {
     margin: auto;
     display: flex;
-    width: 375px;
+    max-width: 375px;
     flex-direction: column;
     background-color: white;
 }
