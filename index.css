@@ -92,8 +92,8 @@ header {
     transition: all ease 0.15s;
 }
 
-.add-button:focus {
-    background-color: #3FC060;
+.add-button:active {
+    background-color: hsl(135, 51%, 50%);
     color: white;
     border-color: white;
 }
