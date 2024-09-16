@@ -132,3 +132,80 @@ header {
 #pickupOption {
     margin-left: 0px;
 }
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.orders-heading {
+    margin: 12px auto;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0px;
+}
+
+.orders-item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.orders-item-price {
+    font-weight: bold;
+}
+
+.remove-btn {
+    font-size: 13px;
+    margin-left: 4px;
+    color: #878787;
+    cursor: pointer;
+}
+
+.divider {
+    height: 1px;
+    margin: 6px 0;
+    background-color: #EEEEEE;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+/* .total-price-title {
+
+}
+
+.total-price {
+
+} */
+
+.checkout-btn {
+    color: white;
+    background-color: #162328;
+    border: none;
+    border-radius: 1px;
+    margin: 6px 0;
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.checkout-btn:active {
+    opacity: 0.95;
+}

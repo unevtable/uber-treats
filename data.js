@@ -3,7 +3,6 @@ export const menuArr = [
         name: "Pizza",
         ingredients: ["pepperoni", "mushrom", "mozarella"],
         price: 14,
-        emoji: "🍕",
         image: '/images/pizza.jpg',
         id: 0
     },
@@ -11,15 +10,13 @@ export const menuArr = [
         name: "Hamburger",
         ingredients: ["beef", "cheese", "lettuce"],
         price: 12,
-        emoji: "🍔",
         image: '/images/hamburger.jpg',
         id: 1
     },
     {
         name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
-        price: 12,
-        emoji: "🍺",
+        price: 9,
         image: '/images/beer.jpg',
         id: 2
     }
