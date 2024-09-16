@@ -37,7 +37,7 @@ function renderHTML() {
                </div>
                <div class="divider"></div>
                <div class="total-container">
-                  <div class="total-price-title">Total:</div>
+                  <div class="total-price-title">Total</div>
                   <div class="total-price" id="totalPrice">$${totalPrice}</div>
                </div>
                <button class="checkout-btn" id="checkout-btn">Checkout</button>

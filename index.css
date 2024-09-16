@@ -194,10 +194,9 @@ header {
     font-weight: bold;
     font-size: 16px;
     padding: 15px 0px;
-    cursor: pointer;
-    transition: all ease 0.2s;
+    transition: all ease 0.15s;
 }
 
 .checkout-btn:active {
-    opacity: 0.9;
+    opacity: 0.85;
 }
