@@ -90,6 +90,7 @@ header {
     padding: 10px 15px;
     margin: auto 12px;
     transition: all ease 0.15s;
+    cursor: pointer;
 }
 
 .add-button:active {
