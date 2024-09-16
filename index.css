@@ -97,8 +97,8 @@ header {
 
 .add-button:active {
     color: white;
-    background-color: #3FC060;
-    border-color: #3FC060;
+    background-color: #162328;
+    border-color: #162328;
 }
 
 .toggle-container {
@@ -199,5 +199,5 @@ header {
 }
 
 .checkout-btn:active {
-    opacity: 0.95;
+    opacity: 0.9;
 }
