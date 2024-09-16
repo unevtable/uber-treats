@@ -24,11 +24,11 @@ header {
 .hero-title {
     margin: 0;
     font-size: 26px;
-    margin: 15px 12px;
+    margin: 18px 12px;
     color: white;
     position: absolute;
+    pointer-events: none;
     z-index: 1;
-    cursor: pointer;
 }
 
 .hero-treats {
@@ -51,7 +51,8 @@ header {
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px #EEEEEE solid;
 }
 
 .item-img {
@@ -65,6 +66,7 @@ header {
     margin: auto;
     margin-top: 3px;
     margin-left: 13px;
+    pointer-events: none;
 }
 
 .item-name {
@@ -84,17 +86,49 @@ header {
 .add-button {
     border: 1px grey solid;
     background-color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    font-family: "Roboto";
     border-radius: 50%;
-    padding: 10px 15px;
-    margin: auto 12px;
+    padding: 10px 14px;
+    margin: auto 14px;
     transition: all ease 0.15s;
-    cursor: pointer;
 }
 
 .add-button:active {
-    background-color: hsl(135, 51%, 50%);
     color: white;
-    border-color: white;
+    background-color: #3FC060;
+    border-color: #3FC060;
+}
+
+.toggle-container {
+    display: flex;
+    text-align: center;
+    padding: 6px 0px;
+    margin: 10px auto;
+    background-color: #EEEEEE;
+    border-radius: 25px;
+}
+
+.toggle-option {
+    font-size: 15px;
+    width: 90px;
+    padding: 8px 2px;
+    transition: all ease 0.3s;
+    margin: 0px 6px;
+    pointer-events: none;
+}
+
+.selected {
+    background-color: #162328;
+    color: white;
+    border-radius: 24px;
+}
+
+#deliveryOption {
+    margin-right: 0px;
+}
+
+#pickupOption {
+    margin-left: 0px;
 }

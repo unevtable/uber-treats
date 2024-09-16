@@ -16,8 +16,19 @@ function renderHTML() {
          </div>
    `
    }).join('')
-
    menuEl.innerHTML += menuHTML
+
+   function toggler() {
+      const optionsEl = document.getElementById('toggleContainer')
+      const deliveryOption = document.getElementById('deliveryOption')
+      const pickupOption = document.getElementById('pickupOption')
+
+      optionsEl.addEventListener('click', () => {
+         deliveryOption.classList.toggle('selected')
+         pickupOption.classList.toggle('selected')
+      })
+   }
+   toggler()
 }
 
 renderHTML()
