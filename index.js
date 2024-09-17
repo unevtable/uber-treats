@@ -7,7 +7,7 @@ function renderHTML() {
    const menuHTML = menuArr.map(function (arr) {
       return `
          <div class="menu-item-container">
-            <img src=${arr.image} class="item-img">
+            <div class="item-img">${arr.emoji}</div>
             <div class="item-info">
                <div class="item-name">${arr.name}</div>
                <div class="item-ingredients">${arr.ingredients.join(', ')}</div>

@@ -35,7 +35,7 @@ header {
     color: #3FC060;
 }
 
-.hero-image {
+.hero-img {
     width: 100%;
     object-fit: cover;
     position: relative;
@@ -56,10 +56,12 @@ header {
 }
 
 .item-img {
+    display: flex;
+    justify-content: center;
     width: 75px;
-    object-fit: cover;
-    border-radius: 50%;
+    font-size: 30px;
     margin-left: 10px;
+    padding-top: 10px;
 }
 
 .item-info {
