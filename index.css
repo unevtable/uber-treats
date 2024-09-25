@@ -125,7 +125,7 @@ header {
     padding: 8px 2px;
     transition: all ease 0.2s;
     margin: 0px 6px;
-    pointer-events: none;
+    user-select: none;
 }
 
 .selected {
@@ -135,11 +135,11 @@ header {
     pointer-events: none;
 }
 
-#deliveryOption {
+.delivery-option {
     margin-right: 0px;
 }
 
-#pickupOption {
+.pickup-option {
     margin-left: 0px;
 }
 
