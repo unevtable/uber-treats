@@ -54,19 +54,24 @@ function renderCheckout() {
 
 function renderOrder(orderId) {
    const ordersListEl = document.querySelector('.orders-list')
-   const removeBtn = document.querySelector('#removeBtn')
    const targetOrderObj = menuArr.find((order) => {
       return order.id === orderId
    })
 
    const orderHTML = `
-      <div class="orders-item-container">
-         <div class="orders-item-name">${targetOrderObj.name}<span class="remove-btn" id="removeBtn"'>remove</span></div>
+      <div class="orders-item-container" data-id='${orderId}'>
+         <div class="orders-item-name">${targetOrderObj.name}<span class='remove-btn' data-id='${orderId}'>remove</span></div>
          <div class="orders-item-price">$${targetOrderObj.price}</div>
       </div>
       `
    ordersListEl.innerHTML += orderHTML
-   console.log(`orders logged: ${orders}`);
+}
+
+function removeOrder(orderId) {
+   document.querySelector(`.orders-item-container[data-id='${orderId}']`).remove()
+   if (!orders) {
+      document.querySelector(`.checkout-container`).remove()
+   }
 }
 
 function toggler() {
@@ -78,10 +83,6 @@ function toggler() {
       deliveryOption.classList.toggle('selected')
       pickupOption.classList.toggle('selected')
    })
-}
-
-function removeOrder() {
-   console.log('remove clicked');
 }
 
 renderHTML()
