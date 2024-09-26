@@ -5,14 +5,16 @@ body {
     background-color: #EEEEEE;
     color: #162328;
     max-width: 400px;
+    position: relative;
+    transition: all ease 0.15s;
 }
 
 .container {
     margin: auto;
     display: flex;
-    max-width: 400px;
-    min-height: 740px;
     flex-direction: column;
+    max-width: 100vh;
+    min-height: 100vh;
     background-color: white;
 }
 
@@ -95,13 +97,14 @@ header {
     padding: 10px 14px;
     margin: auto 0px;
     transition: all ease 0.15s;
+
+    &:active {
+        color: white;
+        background-color: #162328;
+        border-color: #162328;
+    }
 }
 
-.add-button:active {
-    color: white;
-    background-color: #162328;
-    border-color: #162328;
-}
 
 .divider {
     height: 2px;
@@ -206,10 +209,70 @@ header {
     font-size: 16px;
     padding: 15px 0px;
     transition: all ease 0.15s;
+
+    &:active {
+        opacity: 0.8;
+    }
 }
 
-.checkout-btn:active {
-    opacity: 0.85;
+.payment-modal {
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 100%;
+    padding: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 20px rgba(0, 0, 0, 0.15);
+    user-select: none;
+}
+
+.payment-methods-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.payment-icon-container {
+    display: flex;
+}
+
+.payment-method-icon {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.upi {
+    width: 60px;
+    margin-top: -3px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    top: -8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &::after {
+        content: '';
+        border: 1px solid black;
+    }
 }
 
 .hidden {
