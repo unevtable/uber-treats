@@ -55,6 +55,21 @@ function renderHTML() {
          codMethodForm()
       }
    })
+
+   document.getElementById('cardnumber').addEventListener('input', function (e) {
+      let value = e.target.value.replace(/\s/g, '').replace(/\D/g, '');
+
+      let formattedValue = '';
+
+      for (let i = 0; i < value.length; i++) {
+         if (i > 0 && i % 4 === 0) {
+            formattedValue += ' ';
+         }
+         formattedValue += value[i];
+      }
+
+      e.target.value = formattedValue;
+   })
 }
 
 function renderCheckoutSection() {
