@@ -55,21 +55,6 @@ function renderHTML() {
          codMethodForm()
       }
    })
-
-   document.getElementById('cardnumber').addEventListener('input', function (e) {
-      let value = e.target.value.replace(/\s/g, '').replace(/\D/g, '');
-
-      let formattedValue = '';
-
-      for (let i = 0; i < value.length; i++) {
-         if (i > 0 && i % 4 === 0) {
-            formattedValue += ' ';
-         }
-         formattedValue += value[i];
-      }
-
-      e.target.value = formattedValue;
-   })
 }
 
 function renderCheckoutSection() {
@@ -99,8 +84,7 @@ function renderOrder(orderId) {
          <div class="orders-item-name">${targetOrderObj.name}<span class='remove-btn' data-id='${orderId}'>remove</span></div>
          <div class="orders-item-price">$${targetOrderObj.price}</div>
       </div>
-      `
-
+   `
    updateTotalPrice()
 }
 
@@ -199,7 +183,7 @@ function cardMethodForm() {
                </div>
                <div class="cardnumber-input-group full-width-group">
                   <label for="cardnumber">Card Number</label>
-                  <input type="text" pattern="[0-9]{19}" inputmode="numeric" id="cardnumber" name="cardnumber"
+                  <input type="text" inputmode="numeric" id="cardnumber" name="cardnumber"
                      placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
                </div>
                <div class="cvv-and-date-input-group">
@@ -228,6 +212,24 @@ function cardMethodForm() {
                <input type="submit" value="Submit">
          </form>
    `
+   cardNumberFormat()
+}
+
+function cardNumberFormat() {
+   document.getElementById('cardnumber').addEventListener('input', function (e) {
+      let value = e.target.value.replace(/\s/g, '').replace(/\D/g, '');
+
+      let formattedValue = '';
+
+      for (let i = 0; i < value.length; i++) {
+         if (i > 0 && i % 4 === 0) {
+            formattedValue += ' ';
+         }
+         formattedValue += value[i];
+      }
+
+      e.target.value = formattedValue;
+   })
 }
 
 function codMethodForm() {
